@@ -21,10 +21,6 @@ import java.util.List;
 import java.util.Optional;
 
 
-/**
- *
- * @author Nataniel Paiva <nataniel.paiva@gmail.com>
- */
 @Service
 public class UsuarioService {
 

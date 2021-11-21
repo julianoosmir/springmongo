@@ -12,10 +12,6 @@ import com.springmongo.springmongo.entity.Perfil;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-/**
- *
- * @author Nataniel Paiva <nataniel.paiva@gmail.com>
- */
 public interface PerfilRepository extends MongoRepository<Perfil, String> {
     Perfil findByNome(String nome);
 

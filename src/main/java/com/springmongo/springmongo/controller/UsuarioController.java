@@ -23,10 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-/**
- *
- * @author Nataniel Paiva <nataniel.paiva@gmail.com>
- */
+
 @RestController
 @RequestMapping(path = "/usuario")
 public class UsuarioController {

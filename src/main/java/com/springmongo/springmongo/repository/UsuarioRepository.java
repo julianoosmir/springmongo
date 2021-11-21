@@ -13,10 +13,7 @@ import java.util.List;
 import com.springmongo.springmongo.entity.Usuario;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-/**
- *
- * @author Nataniel Paiva <nataniel.paiva@gmail.com>
- */
+
 public interface UsuarioRepository extends MongoRepository<Usuario, String> {
     List<Usuario> findByNomeLikeIgnoreCase(String nome);
 

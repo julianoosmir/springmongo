@@ -11,10 +11,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- *
- * @author Nataniel Paiva <nataniel.paiva@gmail.com>
- */
+
 @Document
 public class Usuario {
 
