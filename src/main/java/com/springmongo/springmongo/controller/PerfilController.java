@@ -28,15 +28,9 @@ public class PerfilController {
         return this.perfilService.getById(id);
     }
 
-    @GetMapping("/{page}/{count}")
-    public Page<Perfil> listaPaginada(@PathVariable int page, @PathVariable int count) {
-        return this.perfilService.listaPaginada(count, page);
-    }
+ 
 
-    // @GetMapping("{nome}/nome")
-    // public List<Perfil> listaPaginada(@PathVariable String nome) {
-    //     return this.erfilService.buscaPorNome(nome);
-    // }
+    
 
     @PostMapping
     public Perfil salvar(@RequestBody Perfil Perfil) {

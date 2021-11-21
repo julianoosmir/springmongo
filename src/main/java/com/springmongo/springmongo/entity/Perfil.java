@@ -2,14 +2,13 @@ package com.springmongo.springmongo.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.security.core.GrantedAuthority;
 
 /**
  *
  * @author Nataniel Paiva <nataniel.paiva@gmail.com>
  */
 @Document
-public class Perfil implements GrantedAuthority {
+public class Perfil {
 
     @Id
     private String id;
@@ -39,9 +38,6 @@ public class Perfil implements GrantedAuthority {
         this.nome = nome;
     }
 
-    @Override
-    public String getAuthority() {
-        return nome;
-    }
+  
 
 }

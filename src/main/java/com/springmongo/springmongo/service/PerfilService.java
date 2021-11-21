@@ -20,11 +20,6 @@ public class PerfilService {
         return perfilRepository.findAll();
     }
 
-    public Page<Perfil> listaPaginada(int count, int page) {
-        Pageable pages = PageRequest.of(page, count);
-        return perfilRepository.findAll(pages);
-    }
-
 
     public Perfil salvarPerfil(Perfil perfil) {
         return perfilRepository.save(perfil);
